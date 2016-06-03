@@ -1,5 +1,6 @@
 class WelcomeController < ApplicationController
   def index
-  	@animals = Animal.all
+  	#best practice
+  	@animals = Animal.paginate(page: params[:page], per_page: 9)
   end
 end
