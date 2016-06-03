@@ -37,6 +37,8 @@ gem 'will_paginate', '~> 3.1.0'
 
 group :production do
 	gem 'puma'
+	#Heroku Gem for static assets / smooth deploy
+	gem 'rails_12factor'
 end
 group :development, :test do
   gem 'pry'
