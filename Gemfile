@@ -33,6 +33,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'materialize-sass'
 
+
+group :production do
+	gem 'puma'
+end
 group :development, :test do
   gem 'pry'
 end
